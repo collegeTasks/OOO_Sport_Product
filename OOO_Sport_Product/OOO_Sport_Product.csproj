@@ -157,6 +157,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Resource Include="logo.png" />
     <Content Include="Model\ModelSportProduct.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>ModelSportProduct.Context.cs</LastGenOutput>

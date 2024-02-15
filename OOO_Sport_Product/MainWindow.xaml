@@ -5,8 +5,61 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOO_Sport_Product"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        WindowStartupLocation="CenterScreen"
+
+        Title="Авторизация" Height="450" Width="800" WindowState="Normal" Icon="/logo.png">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"></RowDefinition>
+            <RowDefinition Height="3*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <!--Background="255,204,153">
+     204,102,0-->
+
+        <Grid Grid.Row="0" Background="#FFFFCC99">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="114*"></ColumnDefinition>
+                <ColumnDefinition Width="116*"></ColumnDefinition>
+                <ColumnDefinition Width="341*"/>
+                <ColumnDefinition Width="229*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Grid.Row="0" Grid.Column="0" Source="/Resources/logo.png"/>
+            <TextBlock Grid.Column="2" Text="Авторизация" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="38,0,0,0"/>
+            <Button Grid.Column="3" Content="Выход" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCC6600"/>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Content="Войти как гость" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCC6600"/>
+            <Button Grid.Column="1" Content="Авторизироваться" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCC6600"/>
+
+        </Grid>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+                <ColumnDefinition ></ColumnDefinition>
+
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Grid.Row="1" Text="Пароль:" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="20"/>
+            <TextBlock Grid.Column="0" Grid.Row="0" Text="Логин:" FontFamily="Comic Sans MS" FontSize="24" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20"/>
+            <PasswordBox Grid.Column="1" Grid.Row="1"  FontFamily="Comic Sans MS" FontSize="24" Height="40" Width="200" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"/>
+            <TextBox Grid.Column="1" Grid.Row="0"  FontFamily="Comic Sans MS" FontSize="24" Height="40" Width="200" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="20"/>
+            <CheckBox Grid.Column="2" Grid.Row="2" Content="Показать пароль" FontFamily="Comic Sans MS" FontSize="18" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20"/>
+
+
+        </Grid>
+
+
+
     </Grid>
 </Window>
